@@ -1,4 +1,3 @@
-```java
 /*
 Унагаев Егор Б763-2
 Время сдачи: 11.06.24
@@ -32,4 +31,3 @@ public class Main {
         return (originalNum == reversedNum);
     }
 }
-```
