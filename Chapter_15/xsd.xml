@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Flower">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Plant" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Name" type="xs:string"/>
+                            <xs:element name="Soil" type="SoilType"/>
+                            <xs:element name="Origin" type="xs:string"/>
+                            <xs:element name="VisualParameters">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="StemColor" type="xs:string"/>
+                                        <xs:element name="LeavesColor" type="xs:string"/>
+                                        <xs:element name="Size" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="GrowingTips">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Temperature" type="xs:int"/>
+                                        <xs:element name="Light" type="LightType"/>
+                                        <xs:element name="Watering" type="xs:int"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Multiplying" type="MultiplyingType"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:simpleType name="SoilType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="подзолистая"/>
+            <xs:enumeration value="грунтовая"/>
+            <xs:enumeration value="дерново-подзолистая"/>
+        </xs:restriction>
+    </xs:
+            simpleType>
+
+    <xs:simpleType name="LightType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="да"/>
+            <xs:enumeration value="нет"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="MultiplyingType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="листьями"/>
+            <xs:enumeration value="черенками"/>
+            <xs:enumeration value="семенами"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

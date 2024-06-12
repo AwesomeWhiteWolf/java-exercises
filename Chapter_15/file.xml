@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flower>
+    <Plant>
+        <Name>Роза</Name>
+        <Soil>дерново-подзолистая</Soil>
+        <Origin>Европа</Origin>
+        <VisualParameters>
+            <StemColor>красный</StemColor>
+            <LeavesColor>зеленый</LeavesColor>
+            <Size>50 см</Size>
+        </VisualParameters>
+        <GrowingTips>
+            <Temperature>20</Temperature>
+            <Light>да</Light>
+            <Watering>500</Watering>
+        </GrowingTips>
+        <Multiplying>черенками</Multiplying>
+    </Plant>
+    <Plant>
+        <Name>Фиалка</Name>
+        <Soil>грунтовая</Soil>
+        <Origin>Африка</Origin>
+        <VisualParameters>
+            <StemColor>зеленый</StemColor>
+            <LeavesColor>фиолетовый</LeavesColor>
+            <Size>20 см</Size>
+        </VisualParameters>
+        <GrowingTips>
+            <Temperature>15</Temperature>
+            <Light>нет</Light>
+            <Watering>200</Watering>
+        </GrowingTips>
+        <Multiplying>листьями</Multiplying>
+    </Plant>
+    <Plant>
+        <Name>Кактус</Name>
+        <Soil>подзолистая</Soil>
+        <Origin>Америка</Origin>
+        <VisualParameters>
+            <StemColor>зеленый</StemColor>
+            <LeavesColor>нет</LeavesColor>
+            <Size>30 см</Size>
+        </VisualParameters>
+        <GrowingTips>
+            <Temperature>30</Temperature>
+            <Light>да</Light>
+            <Watering>100</Watering>
+        </GrowingTips>
+        <Multiplying>семенами</Multiplying>
+    </Plant>
+</Flower>
