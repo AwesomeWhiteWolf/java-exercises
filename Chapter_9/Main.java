@@ -21,7 +21,7 @@ class InvalidNumberException extends Exception {
 public class Main {
     public static void main(String[] args) {
         try {
-            Scanner scanner = new Scanner(new File("C:\\Users\\Egor\\IdeaProjects\\Chapter_1\\src\\input.txt"));
+            Scanner scanner = new Scanner(new File("input.txt"));
             scanner.useLocale(Locale.US); // Используем локаль с разделителем точкой
             double sum = 0;
             int count = 0;
