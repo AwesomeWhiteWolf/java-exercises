@@ -1,7 +1,7 @@
 /*
 Унагаев Егор Б763-2
-Дано три разных целых числа. Реализовать лямбда-выражение,
-которое находит наибольшее из этих трех чисел.
+В тексте найти и напечатать n символов (и их количество), встречающихся
+наиболее часто.
 */
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Map<Character, Integer> charCount = new HashMap<>();
-        try (BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\Egor\\IdeaProjects\\Chapter_1\\src\\input.txt"))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader("input.txt"))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 for (char c : line.toCharArray()) {
