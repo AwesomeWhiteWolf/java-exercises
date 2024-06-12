@@ -13,7 +13,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        String inputFileName = "C:\\Users\\Egor\\IdeaProjects\\Chapter_1\\src\\input.txt";
+        String inputFileName = "input.txt";
         try {
             File inputFile = new File(inputFileName);
             Scanner scanner = new Scanner(inputFile);
