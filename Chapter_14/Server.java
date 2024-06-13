@@ -106,7 +106,6 @@ public class Server {
                     return client;
                 }
             }
-
             return null;
         }
     }
